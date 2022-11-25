@@ -1,4 +1,4 @@
-package tech.bison.trainee2021.taskABlockSix;
+package tech.bison.trainee2021.tasksBlockSix;
 
 public class Circle {
 

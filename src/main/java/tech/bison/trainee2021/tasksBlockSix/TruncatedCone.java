@@ -1,4 +1,4 @@
-package tech.bison.trainee2021.taskABlockSix;
+package tech.bison.trainee2021.tasksBlockSix;
 
 public class TruncatedCone {
 
@@ -13,8 +13,8 @@ public class TruncatedCone {
   }
 
   public TruncatedCone(double baseRadius, double topRadius, double height) {
-    base = new Circle(baseRadius);
-    top = new Circle(topRadius);
+    base = new Circle(baseRadius * 2);
+    top = new Circle(topRadius * 2);
     this.height = height;
   }
 

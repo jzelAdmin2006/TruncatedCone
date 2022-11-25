@@ -1,9 +1,9 @@
-package tech.bison.trainee2021.taskABlockSix;
+package tech.bison.trainee2021.tasksBlockSix;
 
 import java.util.Scanner;
 
 public class Program {
-  public static void Main(String[] args) {
+  public static void main(String[] args) {
     TruncatedCone f1 = new TruncatedCone(12, 5.3, 7.5);
     System.out.println(String.format("Oberflaeche = %s", f1.getSurface()));
     System.out.println(String.format("Mantelflaeche = %s", f1.getSeathing()));
