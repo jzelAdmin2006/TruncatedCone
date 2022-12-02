@@ -50,7 +50,7 @@ public class TruncatedCone {
    * 
    * @return volume of the truncated cone
    */
-  public Object getVolume() {
+  public double getVolume() {
     double baseRadius = base.getRadius();
     double topRadius = top.getRadius();
     return height * Math.PI / 3 * (Math.pow(baseRadius, 2) + baseRadius * topRadius + Math.pow(topRadius, 2));
