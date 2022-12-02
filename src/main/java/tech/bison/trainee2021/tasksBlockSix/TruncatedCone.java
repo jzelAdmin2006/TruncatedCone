@@ -18,12 +18,6 @@ public class TruncatedCone {
     this.height = height;
   }
 
-  /**
-   * @param baseRadius
-   *          radius of the base circle
-   * @param topRadius
-   *          radius of the top circle
-   */
   public double getSurface() {
     double baseRadius = base.getRadius();
     double topRadius = top.getRadius();
