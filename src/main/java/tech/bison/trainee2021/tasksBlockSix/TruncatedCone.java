@@ -7,9 +7,29 @@ public class TruncatedCone {
   private double height;
 
   public TruncatedCone(Circle base, Circle top, double height) {
-    this.base = base;
-    this.top = top;
+    setBase(base);
+    setTop(top);
     this.setHeight(height);
+  }
+
+  /**
+   * @param base
+   *          This is the circle at the base of the truncated cone.
+   * @throws IllegalArgumentException
+   *           The base can't be null.
+   */
+  public void setBase(Circle base) throws IllegalArgumentException {
+    if (base == null) {
+      throw new IllegalArgumentException("A truncated cone base can't be null.");
+    }
+    this.base = base;
+  }
+
+  public void setTop(Circle top) throws IllegalArgumentException {
+    if (base == null) {
+      throw new IllegalArgumentException("A truncated cone top can't be null.");
+    }
+    this.top = top;
   }
 
   public TruncatedCone(double baseRadius, double topRadius, double height) {
