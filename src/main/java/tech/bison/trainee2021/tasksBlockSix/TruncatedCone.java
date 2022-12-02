@@ -18,26 +18,52 @@ public class TruncatedCone {
     this.height = height;
   }
 
+  /**
+   * Calculates the surface of a truncated cone
+   * 
+   * @return surface of the truncated cone
+   */
   public double getSurface() {
     double baseRadius = base.getRadius();
     double topRadius = top.getRadius();
     return Math.PI * (Math.pow(topRadius, 2) + Math.pow(baseRadius, 2) + getSeathLine() * (baseRadius + topRadius));
   }
 
+  /**
+   * Calculates the seathing area of a truncated cone
+   * 
+   * @return seathing area of the truncated cone
+   */
   public double getSeathing() {
     return (top.getRadius() + base.getRadius()) * Math.PI * getSeathLine();
   }
 
+  /**
+   * Calculates the seathing line of a truncated cone
+   * 
+   * @return seathing line of the truncated cone
+   */
   public double getSeathLine() {
     return Math.sqrt(Math.pow(base.getRadius() - top.getRadius(), 2) + Math.pow(height, 2));
   }
 
+  /**
+   * Calculates the volume of a truncated cone
+   * 
+   * @return volume of the truncated cone
+   */
   public Object getVolume() {
     double baseRadius = base.getRadius();
     double topRadius = top.getRadius();
     return height * Math.PI / 3 * (Math.pow(baseRadius, 2) + baseRadius * topRadius + Math.pow(topRadius, 2));
   }
 
+  /**
+   * Sets the height of a truncated cone
+   * 
+   * @param height
+   *          This is the new height of a truncated cone.
+   */
   public void setHeight(double height) {
     this.height = height;
   }
