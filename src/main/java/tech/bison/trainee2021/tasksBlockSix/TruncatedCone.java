@@ -24,9 +24,7 @@ public class TruncatedCone {
    * @return surface of the truncated cone
    */
   public double getSurface() {
-    double baseRadius = base.getRadius();
-    double topRadius = top.getRadius();
-    return Math.PI * (Math.pow(topRadius, 2) + Math.pow(baseRadius, 2) + getSeathLine() * (baseRadius + topRadius));
+    return getSeathing() + top.getArea() + base.getArea();
   }
 
   /**
